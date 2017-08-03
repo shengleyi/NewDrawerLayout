@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+   <LinearLayout
+       android:id="@+id/top"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:fitsSystemWindows="true"
+       android:orientation="vertical">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:background="#14b6f6">
+
+           <TextView
+               android:id="@+id/tv_center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:text="消息"
+               android:textColor="#555555"
+               android:textSize="15sp" />
+
+       </RelativeLayout>
+
+
+
+       <android.support.v4.view.ViewPager
+           android:id="@+id/viewpager"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       </android.support.v4.view.ViewPager>
+
+
+   </LinearLayout>
+
+    <include layout="@layout/draw_menu_layout" />
+
+</android.support.v4.widget.DrawerLayout>
